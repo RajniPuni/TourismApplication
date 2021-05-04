@@ -1,0 +1,59 @@
+
+#####################################
+### JOIN GROUP
+#####################################
+###
+
+POST http://localhost:4000/api/group/member
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDRhNjI5OTUzNDk0ZWYyYTRiZjk3YmEiLCJyb2xlIjoiVVNFUiIsImZpcnN0TmFtZSI6IlNyaVJhbSIsImxhc3ROYW1lIjoiUG9uYW5naSIsImVtYWlsIjoidXNlck9uZUBlbWFpbC5jb20iLCJpYXQiOjE2MTczODE0NDYsImV4cCI6MTYxNzM4NDk4Nn0.QEd_Ay16CaZV7b1xdM6zDSBLmszwBpmyyz-dbm7-TEw
+
+{
+    "name" : "fishing Waterfront",
+    "highlightId" : "60568c3f5b693541706b93e6"
+}
+
+###
+POST http://localhost:4000/api/group/member
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDRhNjI5OTUzNDk0ZWYyYTRiZjk3YmEiLCJyb2xlIjoiVVNFUiIsImZpcnN0TmFtZSI6IlVTRVIiLCJsYXN0TmFtZSI6Ik9ORSIsImVtYWlsIjoidXNlck9uZUBlbWFpbC5jb20iLCJpYXQiOjE2MTU0OTYzNjIsImV4cCI6MTYxNTQ5OTkwMn0.pWwKOvL5t5DHjr1R46Mmpd9-v_1UW8-K-A_hUdRWWEY
+
+{
+    "name" : "Jogging Group",
+    "highlightId" : "604a755cddad4af1482a1ad1"
+}
+
+#####################################
+### LEAVE GROUP
+#####################################
+###
+
+DELETE http://localhost:4000/api/group/member
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDY3NGYwMGFmZmMyZDIzMmU1Yzk0MzIiLCJyb2xlIjoiVVNFUiIsImZpcnN0TmFtZSI6IkpheSIsImxhc3ROYW1lIjoiR2FqamFyIiwiZW1haWwiOiJnYWpqYXJqYXkyM0BnbWFpbC5jb20iLCJpYXQiOjE2MTczODYzNDEsImV4cCI6MTYxNzM4OTg4MX0.d6ZcUI7MeNotoZx3WURguhkFwsVg6P176ttHhTLdJfI
+
+{
+    "_id" : "606745956a2514c4b425da0f"
+}
+
+###
+DELETE http://localhost:4000/api/group/member
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDRhNjI5OTUzNDk0ZWYyYTRiZjk3YmEiLCJyb2xlIjoiVVNFUiIsImZpcnN0TmFtZSI6IlVTRVIiLCJsYXN0TmFtZSI6Ik9ORSIsImVtYWlsIjoidXNlck9uZUBlbWFpbC5jb20iLCJpYXQiOjE2MTU0OTYzNjIsImV4cCI6MTYxNTQ5OTkwMn0.pWwKOvL5t5DHjr1R46Mmpd9-v_1UW8-K-A_hUdRWWEY
+
+{
+    "name" : "Jogging Group",
+    "highlightId" : "604a755cddad4af1482a1ad1"
+}
+
+#####################################
+### GET GROUP MEMBERS
+#####################################
+
+###
+GET http://localhost:4000/api/group/member
+?group_id=60674c305ba247ef3003b04c
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDRhNjI5ZjUzNDk0ZWYyYTRiZjk3YmMiLCJyb2xlIjoiVVNFUiIsImZpcnN0TmFtZSI6IkEiLCJsYXN0TmFtZSI6ImEiLCJlbWFpbCI6ImFAYS5jb20iLCJpYXQiOjE2MTU0OTY5MjksImV4cCI6MTYxNTUwMDQ2OX0.XBHd1pSMFU-ACf_49LKDTi7Zc7XPNmYOZ4V4DIJDQjs
+
+
